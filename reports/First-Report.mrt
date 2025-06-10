@@ -1,0 +1,1542 @@
+{
+  "ReportVersion": "2024.4.5",
+  "ReportGuid": "3356be500d926cad66b302fddcf695c8",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportFile": "First-Report.mrt",
+  "ReportAuthor": "Josué Amaral",
+  "ReportCreated": "/Date(1734105102000-0300)/",
+  "ReportChanged": "/Date(1734125326000-0300)/",
+  "EngineVersion": "EngineV2",
+  "ReportUnit": "Centimeters",
+  "CalculationMode": "Interpretation",
+  "Styles": {
+    "0": {
+      "Ident": "StiStyle",
+      "Description": "Color Even Lines",
+      "Name": "Even lines",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "glare:242,242,242:191,191,191:45::",
+      "TextBrush": "solid:0,0,0",
+      "NegativeTextBrush": "solid:255,0,0"
+    },
+    "1": {
+      "Ident": "StiStyle",
+      "Description": "Stock indicator for text",
+      "Name": "Stock Indicator Text",
+      "Font": ";;Strikeout;",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:",
+      "TextBrush": "solid:255,0,0",
+      "NegativeTextBrush": "solid:255,0,0"
+    },
+    "2": {
+      "Ident": "StiStyle",
+      "Description": "Normal Style",
+      "Name": "Normal style",
+      "Border": ";;;;;;;solid:0,0,0",
+      "Brush": "solid:",
+      "TextBrush": "solid:0,0,0",
+      "NegativeTextBrush": "solid:255,0,0"
+    },
+    "3": {
+      "Ident": "StiStyle",
+      "Description": "When stock is zero",
+      "Name": "Stock indicator",
+      "Font": ";;Bold, Strikeout;",
+      "Border": "All;255,0,0;2;DashDotDot;;;;solid:255,0,0",
+      "Brush": "empty",
+      "TextBrush": "solid:255,0,0",
+      "NegativeTextBrush": "solid:255,0,0",
+      "TextFormat": {
+        "Ident": "StiCurrencyFormatService",
+        "DecimalSeparator": ",",
+        "DecimalDigits": 2,
+        "GroupSeparator": ".",
+        "State": "DecimalDigits, DecimalSeparator, GroupSeparator, GroupSize, PositivePattern, NegativePattern",
+        "NegativePattern": 9,
+        "PositivePattern": 2
+      }
+    }
+  },
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo",
+        "Alias": "Demo",
+        "Columns": {
+          "0": {
+            "Name": "Auto",
+            "NameInSource": "Auto",
+            "Alias": "Auto",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Categories",
+            "NameInSource": "Categories",
+            "Alias": "Categories",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Countries",
+            "NameInSource": "Countries",
+            "Alias": "Countries",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Customers",
+            "NameInSource": "Customers",
+            "Alias": "Customers",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "Employees",
+            "NameInSource": "Employees",
+            "Alias": "Employees",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "GlobalGrowth",
+            "NameInSource": "GlobalGrowth",
+            "Alias": "GlobalGrowth",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "Opec",
+            "NameInSource": "Opec",
+            "Alias": "Opec",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "Order_x0020_Details",
+            "NameInSource": "Order_x0020_Details",
+            "Alias": "Order_x0020_Details",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "Orders",
+            "NameInSource": "Orders",
+            "Alias": "Orders",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "Products",
+            "NameInSource": "Products",
+            "Alias": "Products",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "Shippers",
+            "NameInSource": "Shippers",
+            "Alias": "Shippers",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "States",
+            "NameInSource": "States",
+            "Alias": "States",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "Suppliers",
+            "NameInSource": "Suppliers",
+            "Alias": "Suppliers",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo"
+      },
+      "1": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Auto",
+        "Alias": "Demo_Auto",
+        "Columns": {
+          "0": {
+            "Name": "Country",
+            "NameInSource": "Country",
+            "Alias": "Country",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Rank",
+            "NameInSource": "Rank",
+            "Alias": "Rank",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Year2000",
+            "NameInSource": "Year2000",
+            "Alias": "Year2000",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Year2005",
+            "NameInSource": "Year2005",
+            "Alias": "Year2005",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "Year2009",
+            "NameInSource": "Year2009",
+            "Alias": "Year2009",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Auto"
+      },
+      "2": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Categories",
+        "Alias": "Demo_Categories",
+        "Columns": {
+          "0": {
+            "Name": "CategoryID",
+            "NameInSource": "CategoryID",
+            "Alias": "CategoryID",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "CategoryName",
+            "NameInSource": "CategoryName",
+            "Alias": "CategoryName",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Description",
+            "NameInSource": "Description",
+            "Alias": "Description",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Picture",
+            "NameInSource": "Picture",
+            "Alias": "Picture",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Categories"
+      },
+      "3": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Countries",
+        "Alias": "Demo_Countries",
+        "Columns": {
+          "0": {
+            "Name": "CountriesID",
+            "NameInSource": "CountriesID",
+            "Alias": "CountriesID",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "CountryName",
+            "NameInSource": "CountryName",
+            "Alias": "CountryName",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Flag",
+            "NameInSource": "Flag",
+            "Alias": "Flag",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Countries"
+      },
+      "4": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Customers",
+        "Alias": "Demo_Customers",
+        "Columns": {
+          "0": {
+            "Name": "Address",
+            "NameInSource": "Address",
+            "Alias": "Address",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "City",
+            "NameInSource": "City",
+            "Alias": "City",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "CompanyName",
+            "NameInSource": "CompanyName",
+            "Alias": "CompanyName",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "ContactName",
+            "NameInSource": "ContactName",
+            "Alias": "ContactName",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "ContactTitle",
+            "NameInSource": "ContactTitle",
+            "Alias": "ContactTitle",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "Country",
+            "NameInSource": "Country",
+            "Alias": "Country",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "CustomerID",
+            "NameInSource": "CustomerID",
+            "Alias": "CustomerID",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "Fax",
+            "NameInSource": "Fax",
+            "Alias": "Fax",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "Phone",
+            "NameInSource": "Phone",
+            "Alias": "Phone",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "PostalCode",
+            "NameInSource": "PostalCode",
+            "Alias": "PostalCode",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "Region",
+            "NameInSource": "Region",
+            "Alias": "Region",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Customers"
+      },
+      "5": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Employees",
+        "Alias": "Demo_Employees",
+        "Columns": {
+          "0": {
+            "Name": "Address",
+            "NameInSource": "Address",
+            "Alias": "Address",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "BirthDate",
+            "NameInSource": "BirthDate",
+            "Alias": "BirthDate",
+            "Type": "System.DateTime"
+          },
+          "2": {
+            "Name": "City",
+            "NameInSource": "City",
+            "Alias": "City",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Country",
+            "NameInSource": "Country",
+            "Alias": "Country",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "EmployeeID",
+            "NameInSource": "EmployeeID",
+            "Alias": "EmployeeID",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "Extension",
+            "NameInSource": "Extension",
+            "Alias": "Extension",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "FirstName",
+            "NameInSource": "FirstName",
+            "Alias": "FirstName",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "HireDate",
+            "NameInSource": "HireDate",
+            "Alias": "HireDate",
+            "Type": "System.DateTime"
+          },
+          "8": {
+            "Name": "HomePhone",
+            "NameInSource": "HomePhone",
+            "Alias": "HomePhone",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "LastName",
+            "NameInSource": "LastName",
+            "Alias": "LastName",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "Notes",
+            "NameInSource": "Notes",
+            "Alias": "Notes",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "Photo",
+            "NameInSource": "Photo",
+            "Alias": "Photo",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "PostalCode",
+            "NameInSource": "PostalCode",
+            "Alias": "PostalCode",
+            "Type": "System.String"
+          },
+          "13": {
+            "Name": "Region",
+            "NameInSource": "Region",
+            "Alias": "Region",
+            "Type": "System.String"
+          },
+          "14": {
+            "Name": "ReportsTo",
+            "NameInSource": "ReportsTo",
+            "Alias": "ReportsTo",
+            "Type": "System.String"
+          },
+          "15": {
+            "Name": "Title",
+            "NameInSource": "Title",
+            "Alias": "Title",
+            "Type": "System.String"
+          },
+          "16": {
+            "Name": "TitleOfCourtesy",
+            "NameInSource": "TitleOfCourtesy",
+            "Alias": "TitleOfCourtesy",
+            "Type": "System.String"
+          },
+          "17": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Employees"
+      },
+      "6": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_GlobalGrowth",
+        "Alias": "Demo_GlobalGrowth",
+        "Columns": {
+          "0": {
+            "Name": "Region",
+            "NameInSource": "Region",
+            "Alias": "Region",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Year2006",
+            "NameInSource": "Year2006",
+            "Alias": "Year2006",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Year2007",
+            "NameInSource": "Year2007",
+            "Alias": "Year2007",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Year2008",
+            "NameInSource": "Year2008",
+            "Alias": "Year2008",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "Year2009",
+            "NameInSource": "Year2009",
+            "Alias": "Year2009",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_GlobalGrowth"
+      },
+      "7": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Opec",
+        "Alias": "Demo_Opec",
+        "Columns": {
+          "0": {
+            "Name": "Iran",
+            "NameInSource": "Iran",
+            "Alias": "Iran",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Iraq",
+            "NameInSource": "Iraq",
+            "Alias": "Iraq",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Kuwait",
+            "NameInSource": "Kuwait",
+            "Alias": "Kuwait",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Libya",
+            "NameInSource": "Libya",
+            "Alias": "Libya",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "Nigeria",
+            "NameInSource": "Nigeria",
+            "Alias": "Nigeria",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "Saudi_x0020_Arabia",
+            "NameInSource": "Saudi_x0020_Arabia",
+            "Alias": "Saudi_x0020_Arabia",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "UAE",
+            "NameInSource": "UAE",
+            "Alias": "UAE",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "Venezuela",
+            "NameInSource": "Venezuela",
+            "Alias": "Venezuela",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "Year",
+            "NameInSource": "Year",
+            "Alias": "Year",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Opec"
+      },
+      "8": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Order_x0020_Details",
+        "Alias": "Demo_Order_x0020_Details",
+        "Columns": {
+          "0": {
+            "Name": "Discount",
+            "NameInSource": "Discount",
+            "Alias": "Discount",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "OrderID",
+            "NameInSource": "OrderID",
+            "Alias": "OrderID",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "ProductID",
+            "NameInSource": "ProductID",
+            "Alias": "ProductID",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "Quantity",
+            "NameInSource": "Quantity",
+            "Alias": "Quantity",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "UnitPrice",
+            "NameInSource": "UnitPrice",
+            "Alias": "UnitPrice",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Order_x0020_Details"
+      },
+      "9": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Orders",
+        "Alias": "Demo_Orders",
+        "Columns": {
+          "0": {
+            "Name": "CustomerID",
+            "NameInSource": "CustomerID",
+            "Alias": "CustomerID",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "EmployeeID",
+            "NameInSource": "EmployeeID",
+            "Alias": "EmployeeID",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Freight",
+            "NameInSource": "Freight",
+            "Alias": "Freight",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "OrderDate",
+            "NameInSource": "OrderDate",
+            "Alias": "OrderDate",
+            "Type": "System.DateTime"
+          },
+          "4": {
+            "Name": "OrderID",
+            "NameInSource": "OrderID",
+            "Alias": "OrderID",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "RequiredDate",
+            "NameInSource": "RequiredDate",
+            "Alias": "RequiredDate",
+            "Type": "System.DateTime"
+          },
+          "6": {
+            "Name": "ShipAddress",
+            "NameInSource": "ShipAddress",
+            "Alias": "ShipAddress",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "ShipCity",
+            "NameInSource": "ShipCity",
+            "Alias": "ShipCity",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "ShipCountry",
+            "NameInSource": "ShipCountry",
+            "Alias": "ShipCountry",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "ShipName",
+            "NameInSource": "ShipName",
+            "Alias": "ShipName",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "ShipPostalCode",
+            "NameInSource": "ShipPostalCode",
+            "Alias": "ShipPostalCode",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "ShipRegion",
+            "NameInSource": "ShipRegion",
+            "Alias": "ShipRegion",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "ShipVia",
+            "NameInSource": "ShipVia",
+            "Alias": "ShipVia",
+            "Type": "System.String"
+          },
+          "13": {
+            "Name": "ShippedDate",
+            "NameInSource": "ShippedDate",
+            "Alias": "ShippedDate",
+            "Type": "System.DateTime"
+          },
+          "14": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Orders"
+      },
+      "10": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Products",
+        "Alias": "Demo_Products",
+        "Columns": {
+          "0": {
+            "Name": "CategoryID",
+            "NameInSource": "CategoryID",
+            "Alias": "CategoryID",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Discontinued",
+            "NameInSource": "Discontinued",
+            "Alias": "Discontinued",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "ProductID",
+            "NameInSource": "ProductID",
+            "Alias": "ProductID",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "ProductName",
+            "NameInSource": "ProductName",
+            "Alias": "ProductName",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "QuantityPerUnit",
+            "NameInSource": "QuantityPerUnit",
+            "Alias": "QuantityPerUnit",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "ReorderLevel",
+            "NameInSource": "ReorderLevel",
+            "Alias": "ReorderLevel",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "SupplierID",
+            "NameInSource": "SupplierID",
+            "Alias": "SupplierID",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "UnitPrice",
+            "NameInSource": "UnitPrice",
+            "Alias": "UnitPrice",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "UnitsInStock",
+            "NameInSource": "UnitsInStock",
+            "Alias": "UnitsInStock",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "UnitsOnOrder",
+            "NameInSource": "UnitsOnOrder",
+            "Alias": "UnitsOnOrder",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Products"
+      },
+      "11": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Shippers",
+        "Alias": "Demo_Shippers",
+        "Columns": {
+          "0": {
+            "Name": "CompanyName",
+            "NameInSource": "CompanyName",
+            "Alias": "CompanyName",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Phone",
+            "NameInSource": "Phone",
+            "Alias": "Phone",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "ShipperID",
+            "NameInSource": "ShipperID",
+            "Alias": "ShipperID",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Shippers"
+      },
+      "12": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_States",
+        "Alias": "Demo_States",
+        "Columns": {
+          "0": {
+            "Name": "Capital",
+            "NameInSource": "Capital",
+            "Alias": "Capital",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Name",
+            "NameInSource": "Name",
+            "Alias": "Name",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Population",
+            "NameInSource": "Population",
+            "Alias": "Population",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "USPS",
+            "NameInSource": "USPS",
+            "Alias": "USPS",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_States"
+      },
+      "13": {
+        "Ident": "StiDataTableSource",
+        "Name": "Demo_Suppliers",
+        "Alias": "Demo_Suppliers",
+        "Columns": {
+          "0": {
+            "Name": "Address",
+            "NameInSource": "Address",
+            "Alias": "Address",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "City",
+            "NameInSource": "City",
+            "Alias": "City",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "CompanyName",
+            "NameInSource": "CompanyName",
+            "Alias": "CompanyName",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "ContactName",
+            "NameInSource": "ContactName",
+            "Alias": "ContactName",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "ContactTitle",
+            "NameInSource": "ContactTitle",
+            "Alias": "ContactTitle",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "Country",
+            "NameInSource": "Country",
+            "Alias": "Country",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "Fax",
+            "NameInSource": "Fax",
+            "Alias": "Fax",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "HomePage",
+            "NameInSource": "HomePage",
+            "Alias": "HomePage",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "Phone",
+            "NameInSource": "Phone",
+            "Alias": "Phone",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "PostalCode",
+            "NameInSource": "PostalCode",
+            "Alias": "PostalCode",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "Region",
+            "NameInSource": "Region",
+            "Alias": "Region",
+            "Type": "System.String"
+          },
+          "11": {
+            "Name": "SupplierID",
+            "NameInSource": "SupplierID",
+            "Alias": "SupplierID",
+            "Type": "System.String"
+          },
+          "12": {
+            "Name": "relationId",
+            "NameInSource": "relationId",
+            "Alias": "relationId",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "Demo.Demo_Suppliers"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiXmlDatabase",
+        "Name": "Demo",
+        "Alias": "Demo",
+        "PathData": "/fonte de dados/Demo.xml",
+        "XmlType": "Xml"
+      }
+    },
+    "Relations": {
+      "0": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Auto"
+        },
+        "NameInSource": "Demo_Auto",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Auto"
+      },
+      "1": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Categories"
+        },
+        "NameInSource": "Demo_Categories",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Categories"
+      },
+      "2": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Countries"
+        },
+        "NameInSource": "Demo_Countries",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Countries"
+      },
+      "3": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Customers"
+        },
+        "NameInSource": "Demo_Customers",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Customers"
+      },
+      "4": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Employees"
+        },
+        "NameInSource": "Demo_Employees",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Employees"
+      },
+      "5": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "GlobalGrowth"
+        },
+        "NameInSource": "Demo_GlobalGrowth",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_GlobalGrowth"
+      },
+      "6": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Opec"
+        },
+        "NameInSource": "Demo_Opec",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Opec"
+      },
+      "7": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Order_x0020_Details"
+        },
+        "NameInSource": "Demo_Order_x0020_Details",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Order_x0020_Details"
+      },
+      "8": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Orders"
+        },
+        "NameInSource": "Demo_Orders",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Orders"
+      },
+      "9": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Products"
+        },
+        "NameInSource": "Demo_Products",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Products"
+      },
+      "10": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Shippers"
+        },
+        "NameInSource": "Demo_Shippers",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Shippers"
+      },
+      "11": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "States"
+        },
+        "NameInSource": "Demo_States",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_States"
+      },
+      "12": {
+        "Name": "Demo",
+        "ChildColumns": {
+          "0": "relationId"
+        },
+        "ParentColumns": {
+          "0": "Suppliers"
+        },
+        "NameInSource": "Demo_Suppliers",
+        "Alias": "Demo",
+        "ParentSource": "Demo",
+        "ChildSource": "Demo_Suppliers"
+      },
+      "13": {
+        "Name": "Juncao_Categoria_Produto",
+        "ChildColumns": {
+          "0": "CategoryID"
+        },
+        "ParentColumns": {
+          "0": "CategoryID"
+        },
+        "NameInSource": "Juncao_Categoria_Produto",
+        "Alias": "Juncao_Categoria_Produto",
+        "Active": true,
+        "ParentSource": "Demo_Categories",
+        "ChildSource": "Demo_Products"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "9b1c88dba2d03e9e1dde6d776bdba8c9",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiReportTitleBand",
+          "Name": "ReportTitleBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,0.4,19.01,2.4",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "ClientRectangle": "2.2,0.4,16,1.25",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Diamond - Serviços de qualidade"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";28;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiImage",
+              "Name": "Image1",
+              "Guid": "8b87cbfaae5dc48a96c6383def31c13e",
+              "ClientRectangle": "0.2,0.2,2,1.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "ImageBytes": "data:image/png;base64,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"
+            },
+            "2": {
+              "Ident": "StiElectronicSignature",
+              "Name": "ElectronicSignature1",
+              "ClientRectangle": "13.4,1.6,5.2,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "Type": {
+                "FullName": "Josué Amaral",
+                "CustomFont": "Arial"
+              }
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,3.6,19.01,3",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "ClientRectangle": "0,0.4,18.6,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Categoria {Demo_Products.CategoryID} - {Demo_Products.Juncao_Categoria_Produto.CategoryName}"
+              },
+              "VertAlignment": "Center",
+              "Font": ";14;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text8",
+              "ClientRectangle": "0,1.8,2,1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ID do produto"
+              },
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text9",
+              "ClientRectangle": "2,1.8,6.6,1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Nome do produto"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text10",
+              "ClientRectangle": "8.6,1.8,6.6,1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Quantidade"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text11",
+              "ClientRectangle": "15.2,1.8,2,1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Preço"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text12",
+              "ClientRectangle": "17.2,1.8,1.8,1",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Unidades"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": ";;Bold;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "Expression"
+            }
+          },
+          "SummarySortDirection": "Ascending",
+          "Condition": {
+            "Value": "{Demo_Products.CategoryID}"
+          }
+        },
+        "2": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,7.4,19.01,1",
+          "ComponentStyle": "Normal style",
+          "Conditions": {
+            "0": {
+              "Ident": "StiCondition",
+              "DataType": "Numeric",
+              "Column": "Demo_Products.UnitsInStock",
+              "Value1": "0",
+              "BackColor": "255,255,255",
+              "Font": ";;Bold, Strikeout;",
+              "Style": "Stock indicator",
+              "BorderSides": "None"
+            }
+          },
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:0,0,0",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "ClientRectangle": "0.2,0.2,1.8,0.6",
+              "Conditions": {
+                "0": {
+                  "Ident": "StiCondition",
+                  "DataType": "Numeric",
+                  "Column": "Demo_Products.UnitsInStock",
+                  "Value1": "0",
+                  "Style": "Stock Indicator Text",
+                  "BorderSides": "None"
+                }
+              },
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Demo_Products.ProductID}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0",
+              "Type": "DataColumn"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "ClientRectangle": "2,0.2,6.6,0.6",
+              "Conditions": {
+                "0": {
+                  "Ident": "StiCondition",
+                  "DataType": "Numeric",
+                  "Column": "Demo_Products.UnitsInStock",
+                  "Value1": "0",
+                  "Style": "Stock Indicator Text",
+                  "BorderSides": "None"
+                }
+              },
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Demo_Products.ProductName}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text5",
+              "ClientRectangle": "8.6,0.2,6.6,0.6",
+              "Conditions": {
+                "0": {
+                  "Ident": "StiCondition",
+                  "DataType": "Numeric",
+                  "Column": "Demo_Products.UnitsInStock",
+                  "Value1": "0",
+                  "Style": "Stock Indicator Text",
+                  "BorderSides": "None"
+                }
+              },
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Demo_Products.QuantityPerUnit}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text6",
+              "ClientRectangle": "15.2,0.2,2,0.6",
+              "Conditions": {
+                "0": {
+                  "Ident": "StiCondition",
+                  "DataType": "Numeric",
+                  "Column": "Demo_Products.UnitsInStock",
+                  "Value1": "0",
+                  "Style": "Stock Indicator Text",
+                  "BorderSides": "None"
+                }
+              },
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Demo_Products.UnitPrice}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text7",
+              "ClientRectangle": "17.2,0.2,1.8,0.6",
+              "Conditions": {
+                "0": {
+                  "Ident": "StiCondition",
+                  "DataType": "Numeric",
+                  "Column": "Demo_Products.UnitsInStock",
+                  "Value1": "0",
+                  "Style": "Stock Indicator Text",
+                  "BorderSides": "None"
+                }
+              },
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Demo_Products.UnitsInStock}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "TextBrush": "solid:0,0,0"
+            }
+          },
+          "DataSourceName": "Demo_Products",
+          "EvenStyle": "Even lines",
+          "Sort": {
+            "0": "ASC",
+            "1": "ProductName"
+          }
+        },
+        "3": {
+          "Ident": "StiEmptyBand",
+          "Name": "EmptyBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,9.2,19.01,0.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "4": {
+          "Ident": "StiOverlayBand",
+          "Name": "OverlayBand1",
+          "CanGrow": true,
+          "ClientRectangle": "0,10.8,19.01,2.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiImage",
+              "Name": "Image2",
+              "Guid": "ff5d8d0a761cc123908ee553e349dc0e",
+              "ClientRectangle": "8,0,2.6,2.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:",
+              "ImageBytes": "data:image/png;base64,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"
+            }
+          }
+        }
+      },
+      "PageWidth": 21.01,
+      "PageHeight": 29.69,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      }
+    }
+  }
+}
